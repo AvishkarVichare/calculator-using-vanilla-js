@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="countainer flex justify-center items-center flex-col h-[100vh]">
+
+        <h1 class="text-[2rem] font-bold ">Calculator Using Vanilla JS</h1>
+
+        <!-- calci  -->
+        <div class="grid grid-cols-4 bg-[#2e2e30] px-5 py-7 gap-1 rounded-xl">
+
+            <input type="text" disabled id="display" class="bg-[#a3ae77] text-white col-span-4 h-[100px] rounded-lg border-2 border-black text-[25px] font-bold text-right pr-3">
+            
+            
+
+            <div id="ac-input" class = "pt-2  bg-[#100c0f] text-white border-2 border-black rounded-lg text-[18px] font-bold w-[100px] h-[60px] text-center  cursor-pointer ">AC</div>
+            <div id="c-input" class = "pt-2  bg-[#100c0f] text-white border-2 border-black rounded-lg text-[18px] font-bold w-[100px] h-[60px] text-center  cursor-pointer ">C</div>
+            <div class = "calc-inputs pt-2  bg-[#100c0f] text-white border-2 border-black rounded-lg text-[18px] font-bold w-[100px] h-[60px] text-center  cursor-pointer " >/</div>
+            <div class = "calc-inputs pt-2  bg-[#100c0f] text-white border-2 border-black rounded-lg text-[18px] font-bold w-[100px] h-[60px] text-center  cursor-pointer ">*</div>
+            <div class = "calc-inputs pt-2  border-2 border-black rounded-lg text-[18px] font-bold w-[100px] h-[60px] text-center  cursor-pointer bg-[#58595b] text-white ">7</div>
+            <div class = "calc-inputs pt-2  border-2 border-black rounded-lg text-[18px] font-bold w-[100px] h-[60px] text-center  cursor-pointer bg-[#58595b] text-white ">8</div>
+            <div class = "calc-inputs pt-2  border-2 border-black rounded-lg text-[18px] font-bold w-[100px] h-[60px] text-center  cursor-pointer bg-[#58595b] text-white ">9</div>
+            <div class = "calc-inputs pt-2  border-2 border-black rounded-lg text-[18px] font-bold w-[100px] h-[60px] text-center  cursor-pointer bg-[#58595b] text-white ">-</div>
+            <div class = "calc-inputs pt-2  border-2 border-black rounded-lg text-[18px] font-bold w-[100px] h-[60px] text-center  cursor-pointer bg-[#58595b] text-white ">4</div>
+            <div class = "calc-inputs pt-2  border-2 border-black rounded-lg text-[18px] font-bold w-[100px] h-[60px] text-center  cursor-pointer bg-[#58595b] text-white ">5</div>
+            <div class = "calc-inputs pt-2  border-2 border-black rounded-lg text-[18px] font-bold w-[100px] h-[60px] text-center  cursor-pointer bg-[#58595b] text-white ">6</div>
+            <div class = "calc-inputs pt-2  border-2 border-black rounded-lg text-[18px] font-bold w-[100px] h-[60px] text-center  cursor-pointer bg-[#58595b] text-white ">+</div>
+            <div class = "calc-inputs pt-2  border-2 border-black rounded-lg text-[18px] font-bold w-[100px] h-[60px] text-center  cursor-pointer bg-[#58595b] text-white ">1</div>
+            <div class = "calc-inputs pt-2  border-2 border-black rounded-lg text-[18px] font-bold w-[100px] h-[60px] text-center  cursor-pointer bg-[#58595b] text-white ">2</div>
+            <div class = "calc-inputs pt-2  border-2 border-black rounded-lg text-[18px] font-bold w-[100px] h-[60px] text-center  cursor-pointer bg-[#58595b] text-white ">3</div>
+            <div id="ans-input" class = "border-2 border-black rounded-lg text-[18px] font-bold w-[100px] text-center  cursor-pointer row-span-2 bg-[#f15a2a] text-white">=</div>
+            <div class = "calc-inputs pt-2  border-2 border-black rounded-lg text-[18px] font-bold col-span-2 h-[60px] text-center  cursor-pointer bg-[#58595b] text-white">0</div>
+            <div class = "calc-inputs pt-2  border-2 border-black rounded-lg text-[18px] font-bold h-[60px] text-center  cursor-pointer bg-[#58595b] text-white">.</div>
+            
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
